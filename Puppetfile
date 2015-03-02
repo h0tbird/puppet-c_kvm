@@ -1,24 +1,24 @@
 mod 'r_kvm',
-  :git => 'https://h0tbird@github.com/h0tbird/puppet-r_kvm.git'
+  :git => 'http://gito01.demo.lan/cgit/puppet-r_kvm'
 
 mod 'r_base',
-  :git => 'https://h0tbird@github.com/h0tbird/puppet-r_base.git'
+  :git => 'http://gito01.demo.lan/cgit/puppet-r_base'
 
 mod 'stdlib',
-  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib.git',
+  :git => 'http://gito01.demo.lan/cgit/puppet-m_stdlib',
   :tag => '4.3.2'
 
 mod 'misclib',
-  :git => 'https://h0tbird@github.com/h0tbird/puppet-misclib.git'
+  :git => 'http://gito01.demo.lan/cgit/puppet-m_misclib'
 
 mod 'users',
-  :git => 'https://h0tbird@github.com/h0tbird/puppet-users.git'
+  :git => 'http://gito01.demo.lan/cgit/puppet-m_users'
 
 mod 'ssh',
-  :git => 'https://h0tbird@github.com/h0tbird/puppet-ssh.git'
+  :git => 'http://gito01.demo.lan/cgit/puppet-m_ssh'
 
 mod 'p_ssh',
-  :git => 'https://h0tbird@github.com/h0tbird/puppet-p_ssh.git'
+  :git => 'http://gito01.demo.lan/cgit/puppet-p_ssh'
 
 mod 'terminfo',
-  :git => 'https://h0tbird@github.com/h0tbird/puppet-terminfo.git'
+  :git => 'http://gito01.demo.lan/cgit/puppet-m_terminfo'
