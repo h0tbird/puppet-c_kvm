@@ -1,7 +1,7 @@
 ---
 
 #------------------------------------------------------------------------------
-# Definitions:
+# Define public SSH keys:
 #------------------------------------------------------------------------------
 
 SshKeys:
@@ -14,6 +14,10 @@ SshKeys:
  daniel.ortiz: &SshKey_daniel_ortiz 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDkL1lsrIgn0drfQPjC075puywdoZ2Lna1rp6MpszYAfQGM4fSS+ndPDMqhxLBL0LxrAV9JYQL7y/A/Ia9RZk4DHw7GMD48XN9helilYsWbgVzwsAdozHFnPY3h1Rrs+qbU5GsT9rdnxeJ7mrzS7fuGwh4LOgD5GNrX251PBsfwEAh9sziaTGm/PWZUm0txx+P3KaMYxHVkG+BKPAeQrBR9d6mRFnZa3aCen3Zi9S/QMAhpezEcJtPr/2yIGFg1v/v4KDNvev3CrE6GJYcTIXJPcs3O2ZQsEq09uPWiMGP8ZyyenMmPWiCEqMcsBoJUrX/QgTqVxFScbjNV8DIXfOqx'
  xavier.cespedes: &SshKey_xavier_cespedes 'AAAAB3NzaC1yc2EAAAABJQAAAQEA07/5aU6Ivq9lpiNRk549XzXQrV5cai7Y1sim3Ou1uf/F4eY//YDDPOr3WhpLo+BqhFz4sQfVb1c4bD6caZFy9PYEuE2jLPTdoxRTG56afc3oGguspk6uj9t5IyaxAI/5UDiYi+0O0NBKpx42HjeP/oeUQdKij5Z/JMc9tXvw8bGPpENVuqCUZ6iqW7ftKuuR4fTHLgtCQSlNRJZDB06gHd2DoDB8s2ZDVmeTTYpYx2QXIk6Dr/OyTeULAGmCYdryD9DF1rnmx3Q4YQQ2JzDPB7/ED/FtgJRoeP+IoP0Jr0ALoZtW7V+7rk+H4koCjsYmBNLZCdr9TnqvEPrsjwPuYw=='
  jorge.tarrero: &SshKey_jorge_tarrero 'AAAAB3NzaC1yc2EAAAABIwAAAQEArKxv3kOvUNC0IMCtVcHR8jj9tbJRAT02e3Gm9FTgB+MRd/SxSJ+CgLsjgkiQNDsM1EKGLPyqowh4Xvm/1YA07ucxfEVemgGS/wMbuaxCW5igPZNkVeB6POVnN8XyosMRgmROUj3cRxeTtgz9hdgLgnbLLyPHr49CWBK5VKuDi2w7KObGoJ52vaAsPsgSyNgY4ofsELsb0MTPEEWu3v3xOcvIgWfHq9FpLeyOR7hTitWBjyHqR1WIwfUH3mdCCU5wVBiJZFS7vn0gzN5oDFyz1iJ9VBh8P7/jKPVHJTMbdgo0wHMt+5ZDqeI8734Am0IxXl65kAUlXSuGMxoqMUe41w=='
+
+#------------------------------------------------------------------------------
+# Define linux system users:
+#------------------------------------------------------------------------------
 
 Users:
  root: &User_root
@@ -48,14 +52,14 @@ Users:
     - 'marc.villacorta'
 
 #------------------------------------------------------------------------------
-# Users:
+# Users module parameters:
 #------------------------------------------------------------------------------
 
-r_base::users:
+users::users:
   root: *User_root
 
 #------------------------------------------------------------------------------
-# SSH:
+# SSH profile parameters:
 #------------------------------------------------------------------------------
 
 p_ssh::server_permit_user_environment: 'yes'
