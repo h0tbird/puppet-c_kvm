@@ -1,7 +1,7 @@
 ---
 
 #------------------------------------------------------------------------------
-# Define public SSH keys:
+# Public SSH keys:
 #------------------------------------------------------------------------------
 
 SshKeys:
@@ -16,10 +16,10 @@ SshKeys:
  jorge.tarrero: &SshKey_jorge_tarrero 'AAAAB3NzaC1yc2EAAAABIwAAAQEArKxv3kOvUNC0IMCtVcHR8jj9tbJRAT02e3Gm9FTgB+MRd/SxSJ+CgLsjgkiQNDsM1EKGLPyqowh4Xvm/1YA07ucxfEVemgGS/wMbuaxCW5igPZNkVeB6POVnN8XyosMRgmROUj3cRxeTtgz9hdgLgnbLLyPHr49CWBK5VKuDi2w7KObGoJ52vaAsPsgSyNgY4ofsELsb0MTPEEWu3v3xOcvIgWfHq9FpLeyOR7hTitWBjyHqR1WIwfUH3mdCCU5wVBiJZFS7vn0gzN5oDFyz1iJ9VBh8P7/jKPVHJTMbdgo0wHMt+5ZDqeI8734Am0IxXl65kAUlXSuGMxoqMUe41w=='
 
 #------------------------------------------------------------------------------
-# Define linux system users:
+# Linux system users:
 #------------------------------------------------------------------------------
 
-Users:
+SystemUsers:
  root: &User_root
   linux:
    uid: '0'
@@ -52,11 +52,13 @@ Users:
     - 'marc.villacorta'
 
 #------------------------------------------------------------------------------
-# Users module parameters:
+# CoreOS master hosts:
 #------------------------------------------------------------------------------
 
-users::users:
-  root: *User_root
+MasterHosts:
+ - 'core01'
+ - 'core02'
+ - 'core03'
 
 #------------------------------------------------------------------------------
 # SSH profile parameters:
