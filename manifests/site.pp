@@ -12,21 +12,6 @@ stage { 'post': require => Stage['main'] }
 Package { allow_virtual => true }
 
 #------------------------------------------------------------------------------
-# Do not mess with services in a docker build:
-#------------------------------------------------------------------------------
-
-if $::docker_build {
-  Service <||> {
-    hasrestart => true,
-    hasstatus  => true,
-    restart    => '/bin/true',
-    stop       => '/bin/true',
-    start      => '/bin/true',
-    status     => '/bin/true',
-  }
-}
-
-#------------------------------------------------------------------------------
 # Node classifier:
 #------------------------------------------------------------------------------
 
