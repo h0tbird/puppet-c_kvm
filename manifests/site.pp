@@ -15,4 +15,4 @@ Package { allow_virtual => true }
 # Node classifier:
 #------------------------------------------------------------------------------
 
-node /^([a-z]+)\d{2}/ { include '::r_base', "::r_${1}" }
+node /^([a-z]+)-\d+/ { include '::r_base', "::r_${1}" }
