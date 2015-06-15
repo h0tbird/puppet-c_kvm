@@ -56,9 +56,106 @@ SystemUsers:
 #------------------------------------------------------------------------------
 
 MasterHosts:
- - 'core-1'
- - 'core-2'
- - 'core-3'
+ cell-0:
+  - 'core-1'
+  - 'core-2'
+  - 'core-3'
+ cell-1:
+  - 'core-1'
+  - 'core-5'
+  - 'core-9'
+
+#------------------------------------------------------------------------------
+# Booddies config:
+#------------------------------------------------------------------------------
+
+Booddies:
+
+ # cell-0 configuration:
+
+ cell-0:
+  boot:
+   ID: 'boot01'
+   IMAGE: 'h0tbird/boot:latest'
+   HOSTNAME: "boot01.%{::domain}"
+   DATA_DIR: '/data/boot'
+   DHCP_RANGE: '172.20.5.131,172.20.5.158,12h'
+   DHCP_OPTION: 'option:router,172.20.4.254'
+   DNS_UPSTREAMS: '8.8.8.8 8.8.4.4'
+   DOMAIN: "%{::domain}"
+   IP: '172.20.5.130'
+   IP_PREFIX: '21'
+   GATEWAY: '172.20.4.254'
+   HOST_BRIDGE: 'core0'
+  cgit:
+   ID: 'cgit01'
+   IMAGE: 'h0tbird/cgit:latest'
+   HOSTNAME: "cgit01.%{::domain}"
+  data:
+   ID: 'data01'
+   IMAGE: 'h0tbird/data:latest'
+   HOSTNAME: "data01.%{::domain}"
+   DATA_DIR: '/data/data'
+   COREOS_CHANNEL: 'alpha'
+   HOST_BRIDGE: 'core0'
+  gito:
+   ID: 'gito01'
+   IMAGE: 'h0tbird/gito:latest'
+   HOSTNAME: "gito01.%{::domain}"
+   DATA_DIR: '/data/gito'
+   SSH_PRI_KEY: '/root/.ssh/gitolite.key'
+   SSH_PUB_KEY: '/root/.ssh/gitolite.key.pub'
+   TRUST_HOSTS: 'github.com'
+   HOST_BRIDGE: 'core0'
+  regi:
+   ID: 'regi01'
+   IMAGE: 'h0tbird/regi:latest'
+   HOSTNAME: "regi01.%{::domain}"
+   DATA_DIR: '/data/regi'
+   HOST_BRIDGE: 'core0'
+
+ # cell-1 configuration:
+
+ cell-1:
+  boot:
+   ID: 'boot01'
+   IMAGE: 'h0tbird/boot:latest'
+   HOSTNAME: "boot01.%{::domain}"
+   DATA_DIR: '/data/boot'
+   DHCP_RANGE: '172.20.3.131,172.20.3.190,12h'
+   DHCP_OPTION: 'option:router,172.20.4.254'
+   DNS_UPSTREAMS: '8.8.8.8 8.8.4.4'
+   DOMAIN: "%{::domain}"
+   IP: '172.20.3.130'
+   IP_PREFIX: '21'
+   GATEWAY: '172.20.4.254'
+   HOST_BRIDGE: 'core0'
+  cgit:
+   ID: 'cgit01'
+   IMAGE: 'h0tbird/cgit:latest'
+   HOSTNAME: "cgit01.%{::domain}"
+  data:
+   ID: 'data01'
+   IMAGE: 'h0tbird/data:latest'
+   HOSTNAME: "data01.%{::domain}"
+   DATA_DIR: '/data/data'
+   COREOS_CHANNEL: 'alpha'
+   HOST_BRIDGE: 'core0'
+  gito:
+   ID: 'gito01'
+   IMAGE: 'h0tbird/gito:latest'
+   HOSTNAME: "gito01.%{::domain}"
+   DATA_DIR: '/data/gito'
+   SSH_PRI_KEY: '/root/.ssh/gitolite.key'
+   SSH_PUB_KEY: '/root/.ssh/gitolite.key.pub'
+   TRUST_HOSTS: 'github.com'
+   HOST_BRIDGE: 'core0'
+  regi:
+   ID: 'regi01'
+   IMAGE: 'h0tbird/regi:latest'
+   HOSTNAME: "regi01.%{::domain}"
+   DATA_DIR: '/data/regi'
+   HOST_BRIDGE: 'core0'
 
 #------------------------------------------------------------------------------
 # SSH profile parameters:
