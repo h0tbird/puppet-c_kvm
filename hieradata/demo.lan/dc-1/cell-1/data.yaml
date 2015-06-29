@@ -6,8 +6,20 @@
 
 MasterHosts:
  - 'core-1'
- - 'core-5'
- - 'core-9'
+ - 'core-2'
+ - 'core-3'
+
+#------------------------------------------------------------------------------
+# Static DHCP leases:
+#------------------------------------------------------------------------------
+
+DnsmasqLeases:
+ - name: 'kvm-1'
+   mac: '4c:72:b9:26:25:97'
+   ip: '192.168.1.113'
+ - name: 'kvm-2'
+   mac: '192.168.1.144'
+   ip: '54:be:f7:88:25:c5'
 
 #------------------------------------------------------------------------------
 # Booddies config:
@@ -19,13 +31,13 @@ Booddies:
   IMAGE: 'h0tbird/boot:latest'
   HOSTNAME: "boot01.%{::domain}"
   DATA_DIR: '/data/boot'
-  DHCP_RANGE: '172.20.3.131,172.20.3.190,12h'
-  DHCP_OPTION: 'option:router,172.20.4.254'
+  DHCP_RANGE: '192.168.1.50,192.168.1.150,12h'
+  DHCP_OPTION: 'option:router,192.168.1.1'
   DNS_UPSTREAMS: '8.8.8.8 8.8.4.4'
   DOMAIN: "%{::domain}"
-  IP: '172.20.3.130'
-  IP_PREFIX: '21'
-  GATEWAY: '172.20.4.254'
+  IP: '192.168.1.2'
+  IP_PREFIX: '24'
+  GATEWAY: '192.168.1.1'
   HOST_BRIDGE: 'core0'
  cgit:
   ID: 'cgit01'
