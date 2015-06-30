@@ -1,0 +1,15 @@
+---
+
+CephDataDrives:
+ - '/dev/sdb1'
+ - '/dev/sdc1'
+ - '/dev/sdd1'
+ - '/dev/sde1'
+
+HDFSDataDrives:
+ - '/dev/sdb2'
+ - '/dev/sdc2'
+ - '/dev/sdd2'
+ - '/dev/sde2'
+
+...
