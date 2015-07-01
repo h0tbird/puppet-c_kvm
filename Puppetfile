@@ -8,6 +8,10 @@ mod 'stdlib',
   :git => 'http://gito01/cgit/puppet-m_stdlib',
   :tag => '4.3.2'
 
+mod 'vcsrepo',
+  :git => 'http://gito01/cgit/puppet-m_vcsrepo',
+  :tag => '1.3.0'
+
 mod 'misclib',
   :git => 'http://gito01/cgit/puppet-m_misclib'
 
