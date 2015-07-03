@@ -30,7 +30,7 @@ SystemUsers:
   linux:
    uid: '1000'
    gid: '1000'
-   comment: 'Site reliability engineer'
+   comment: 'Marc Villacorta'
    pass: '!!'
    home: '/home/marc.villacorta'
    shell: '/bin/bash'

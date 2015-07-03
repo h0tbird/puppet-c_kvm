@@ -51,7 +51,7 @@ SystemUsers:
   linux:
    uid: '1000'
    gid: '1000'
-   comment: 'Site reliability engineer'
+   comment: 'Marc Villacorta'
    pass: '!!'
    home: '/home/marc.villacorta'
    shell: '/bin/bash'
@@ -64,7 +64,7 @@ SystemUsers:
   linux:
    uid: '1001'
    gid: '1001'
-   comment: 'Site reliability engineer'
+   comment: 'Borja Garcia'
    pass: '!!'
    home: '/home/borja.garcia'
    shell: '/bin/bash'
@@ -77,7 +77,7 @@ SystemUsers:
   linux:
    uid: '1002'
    gid: '1002'
-   comment: 'Site reliability engineer'
+   comment: 'Santiago Núñez-Cacho'
    pass: '!!'
    home: '/home/santiago.nunezcacho'
    shell: '/bin/bash'
@@ -90,7 +90,7 @@ SystemUsers:
   linux:
    uid: '1003'
    gid: '1003'
-   comment: 'Site reliability engineer'
+   comment: 'Juan Carlos Pérez'
    pass: '!!'
    home: '/home/juancarlos.perez'
    shell: '/bin/bash'
@@ -103,7 +103,7 @@ SystemUsers:
   linux:
    uid: '1004'
    gid: '1004'
-   comment: 'Site reliability engineer'
+   comment: 'Xavier Lario'
    pass: '!!'
    home: '/home/xavier.lario'
    shell: '/bin/bash'
@@ -116,7 +116,7 @@ SystemUsers:
   linux:
    uid: '1005'
    gid: '1005'
-   comment: 'Site reliability engineer'
+   comment: 'Roger Torrentsgenerós'
    pass: '!!'
    home: '/home/roger.torrentsgeneros'
    shell: '/bin/bash'
@@ -129,7 +129,7 @@ SystemUsers:
   linux:
    uid: '1006'
    gid: '1006'
-   comment: 'Site reliability engineer'
+   comment: 'Xavier Céspedes'
    pass: '!!'
    home: '/home/xavier.cespedes'
    shell: '/bin/bash'
@@ -142,7 +142,7 @@ SystemUsers:
   linux:
    uid: '1007'
    gid: '1007'
-   comment: 'Site reliability engineer'
+   comment: 'Jorge Tarrero'
    pass: '!!'
    home: '/home/jorge.tarrero'
    shell: '/bin/bash'
