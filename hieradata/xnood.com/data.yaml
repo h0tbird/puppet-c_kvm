@@ -44,9 +44,6 @@ SystemUsers:
      key: *SshKey_xavier_cespedes
     jorge.tarrero:
      key: *SshKey_jorge_tarrero
-   profiles:
-    - 'root'
-    - 'marc.villacorta'
  marc.villacorta:
   linux:
    uid: '1000'
@@ -58,8 +55,6 @@ SystemUsers:
    keys:
     marc.villacorta:
      key: *SshKey_marc_villacorta
-   profiles:
-    - 'marc.villacorta'
  borja.garcia:
   linux:
    uid: '1001'
@@ -71,8 +66,6 @@ SystemUsers:
    keys:
     borja.garcia:
      key: *SshKey_borja_garcia
-   profiles:
-    - 'borja.garcia'
  santiago.nunezcacho:
   linux:
    uid: '1002'
@@ -84,8 +77,6 @@ SystemUsers:
    keys:
     santiago.nunezcacho:
      key: *SshKey_santiago_nunezcacho
-   profiles:
-    - 'santiago.nunezcacho'
  juancarlos.perez:
   linux:
    uid: '1003'
@@ -97,8 +88,6 @@ SystemUsers:
    keys:
     juancarlos.perez:
      key: *SshKey_juancarlos_perez
-   profiles:
-    - 'juancarlos.perez'
  xavier.lario:
   linux:
    uid: '1004'
@@ -110,8 +99,6 @@ SystemUsers:
    keys:
     xavier.lario:
      key: *SshKey_xavier_lario
-   profiles:
-    - 'xavier.lario'
  roger.torrentsgeneros:
   linux:
    uid: '1005'
@@ -123,8 +110,6 @@ SystemUsers:
    keys:
     roger.torrentsgeneros:
      key: *SshKey_roger_torrentsgeneros
-   profiles:
-    - 'roger.torrentsgeneros'
  xavier.cespedes:
   linux:
    uid: '1006'
@@ -136,8 +121,6 @@ SystemUsers:
    keys:
     xavier.cespedes:
      key: *SshKey_xavier_cespedes
-   profiles:
-    - 'xavier.cespedes'
  jorge.tarrero:
   linux:
    uid: '1007'
@@ -149,8 +132,6 @@ SystemUsers:
    keys:
     marc.villacorta:
      key: *SshKey_jorge_tarrero
-   profiles:
-    - 'jorge.tarrero'
 
 #------------------------------------------------------------------------------
 # SSH profile parameters:
