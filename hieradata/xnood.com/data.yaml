@@ -60,6 +60,97 @@ SystemUsers:
      key: *SshKey_marc_villacorta
    profiles:
     - 'marc.villacorta'
+ borja.garcia:
+  linux:
+   uid: '1001'
+   gid: '1001'
+   comment: 'Site reliability engineer'
+   pass: '!!'
+   home: '/home/borja.garcia'
+   shell: '/bin/bash'
+   keys:
+    borja.garcia:
+     key: *SshKey_borja_garcia
+   profiles:
+    - 'borja.garcia'
+ santiago.nunezcacho:
+  linux:
+   uid: '1002'
+   gid: '1002'
+   comment: 'Site reliability engineer'
+   pass: '!!'
+   home: '/home/santiago.nunezcacho'
+   shell: '/bin/bash'
+   keys:
+    santiago.nunezcacho:
+     key: *SshKey_santiago_nunezcacho
+   profiles:
+    - 'santiago.nunezcacho'
+ juancarlos.perez:
+  linux:
+   uid: '1003'
+   gid: '1003'
+   comment: 'Site reliability engineer'
+   pass: '!!'
+   home: '/home/juancarlos.perez'
+   shell: '/bin/bash'
+   keys:
+    juancarlos.perez:
+     key: *SshKey_juancarlos_perez
+   profiles:
+    - 'juancarlos.perez'
+ xavier.lario:
+  linux:
+   uid: '1004'
+   gid: '1004'
+   comment: 'Site reliability engineer'
+   pass: '!!'
+   home: '/home/xavier.lario'
+   shell: '/bin/bash'
+   keys:
+    xavier.lario:
+     key: *SshKey_xavier_lario
+   profiles:
+    - 'xavier.lario'
+ roger.torrentsgeneros:
+  linux:
+   uid: '1005'
+   gid: '1005'
+   comment: 'Site reliability engineer'
+   pass: '!!'
+   home: '/home/roger.torrentsgeneros'
+   shell: '/bin/bash'
+   keys:
+    roger.torrentsgeneros:
+     key: *SshKey_roger_torrentsgeneros
+   profiles:
+    - 'roger.torrentsgeneros'
+ xavier.cespedes:
+  linux:
+   uid: '1006'
+   gid: '1006'
+   comment: 'Site reliability engineer'
+   pass: '!!'
+   home: '/home/xavier.cespedes'
+   shell: '/bin/bash'
+   keys:
+    xavier.cespedes:
+     key: *SshKey_xavier_cespedes
+   profiles:
+    - 'xavier.cespedes'
+ jorge.tarrero:
+  linux:
+   uid: '1007'
+   gid: '1007'
+   comment: 'Site reliability engineer'
+   pass: '!!'
+   home: '/home/jorge.tarrero'
+   shell: '/bin/bash'
+   keys:
+    marc.villacorta:
+     key: *SshKey_jorge_tarrero
+   profiles:
+    - 'jorge.tarrero'
 
 #------------------------------------------------------------------------------
 # SSH profile parameters:
