@@ -26,6 +26,19 @@ SystemUsers:
    profiles:
     - 'root'
     - 'marc.villacorta'
+ marc.villacorta:
+  linux:
+   uid: '1000'
+   gid: '1000'
+   comment: 'Site reliability engineer'
+   pass: '!!'
+   home: '/home/marc.villacorta'
+   shell: '/bin/bash'
+   keys:
+    marc.villacorta:
+     key: *SshKey_marc_villacorta
+   profiles:
+    - 'marc.villacorta'
 
 #------------------------------------------------------------------------------
 # SSH profile parameters:
