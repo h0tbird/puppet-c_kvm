@@ -12,7 +12,7 @@ SshKeys:
 #------------------------------------------------------------------------------
 
 SystemUsers:
- root: &User_root
+ root:
   linux:
    uid: '0'
    gid: '0'
@@ -34,6 +34,9 @@ SystemUsers:
    keys:
     marc.villacorta:
      key: *SshKey_marc_villacorta
+  git:
+   name: 'Marc Villacorta'
+   email: 'marc.villacorta@gmail.com'
 
 #------------------------------------------------------------------------------
 # SSH profile parameters:
