@@ -1,15 +1,15 @@
 ---
 
 CephDataDrives:
- - '/dev/sdb1'
- - '/dev/sdb2'
- - '/dev/sdb3'
- - '/dev/sdb4'
+ 1: 'none'
+ 2: 'none'
+ 3: 'none'
+ 4: 'none'
 
 HDFSDataDrives:
- - '/dev/sdb5'
- - '/dev/sdb6'
- - '/dev/sdb7'
- - '/dev/sdb8'
+ 1: 'none'
+ 2: 'none'
+ 3: 'none'
+ 4: 'none'
 
 ...
