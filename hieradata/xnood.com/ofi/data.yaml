@@ -1,15 +1,15 @@
 ---
 
 CephDataDrives:
- - '/dev/sdb1'
- - '/dev/sdc1'
- - '/dev/sdd1'
- - '/dev/sde1'
+ core-1: '/dev/sdb1'
+ core-2: '/dev/sdb2'
+ core-3: '/dev/sdb3'
+ core-4: '/dev/sdb4'
 
 HDFSDataDrives:
- - '/dev/sdb2'
- - '/dev/sdc2'
- - '/dev/sdd2'
- - '/dev/sde2'
+ core-1: '/dev/sdc1'
+ core-2: '/dev/sdc2'
+ core-3: '/dev/sdc3'
+ core-4: '/dev/sdc4'
 
 ...
