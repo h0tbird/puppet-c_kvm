@@ -16,13 +16,13 @@ MasterHosts:
 DnsmasqLeases:
  - name: 'kvm-1'
    mac: '84:2b:2b:59:a4:ae'
-   ip: '172.20.3.177'
+   ip: '172.16.8.90'
  - name: 'kvm-2'
    mac: '84:2b:2b:58:4a:a4'
-   ip: '172.20.3.143'
+   ip: '172.16.8.91'
  - name: 'kvm-3'
    mac: '78:2b:cb:23:65:46'
-   ip: '172.20.3.137'
+   ip: '172.16.8.92'
 
 #------------------------------------------------------------------------------
 # Booddies config:
@@ -34,13 +34,13 @@ Booddies:
   IMAGE: 'h0tbird/boot:latest'
   HOSTNAME: "boot01.%{::domain}"
   DATA_DIR: '/data/boot'
-  DHCP_RANGE: '172.20.3.131,172.20.3.190,12h'
-  DHCP_OPTION: 'option:router,172.20.4.254'
+  DHCP_RANGE: '172.16.8.16,172.16.8.95,12h'
+  DHCP_OPTION: 'option:router,172.16.8.1'
   DNS_UPSTREAMS: '8.8.8.8 8.8.4.4'
   DOMAIN: "%{::domain}"
-  IP: '172.20.3.130'
+  IP: '172.16.8.2'
   IP_PREFIX: '21'
-  GATEWAY: '172.20.4.254'
+  GATEWAY: '172.16.8.1'
   HOST_BRIDGE: 'core0'
  cgit:
   ID: 'cgit01'
