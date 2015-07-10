@@ -1,5 +1,9 @@
 ---
 
+#--------------
+# Data drives:
+#--------------
+
 CephDataDrives:
  1: 'none'
  2: 'none'
@@ -11,5 +15,11 @@ HDFSDataDrives:
  2: 'none'
  3: 'none'
  4: 'none'
+
+#-------------------------------
+# Whether to enable KSM or not:
+#-------------------------------
+
+KSM: true
 
 ...

@@ -1,5 +1,9 @@
 ---
 
+#--------------
+# Data drives:
+#--------------
+
 CephDataDrives:
  1: '/dev/sdb1'
  2: '/dev/sdb2'
@@ -11,5 +15,11 @@ HDFSDataDrives:
  2: '/dev/sdc2'
  3: '/dev/sdc3'
  4: '/dev/sdc4'
+
+#-------------------------------
+# Whether to enable KSM or not:
+#-------------------------------
+
+KSM: true
 
 ...
