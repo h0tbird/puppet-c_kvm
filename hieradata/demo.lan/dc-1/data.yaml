@@ -48,7 +48,7 @@ CephConfig:
   public_network: '%{::network_core0}/24'
   osd_mkfs_type: 'xfs'
   osd_mkfs_options_xfs: '-f -i size=2048'
-  osd_mon_heartbeat_interval: '30'
+  osd_mon_heartbeat_interval: 30
   # Crush:
   pool_default_crush_rule: 0
   osd_crush_update_on_start: true
