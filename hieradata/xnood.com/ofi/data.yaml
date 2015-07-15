@@ -21,8 +21,8 @@ HDFSDataDrives:
 #-------------------------------------------------------------------------------
 
 CephConfig:
- cluster_name: 'ceph-%{::fqdn_3}'
- etcd_path: 'ceph-config/ceph-%{::fqdn_3}'
+ cluster_name: 'ceph'
+ etcd_path: 'ceph-config/ceph'
  auth:
   cephx: true
   cephx_require_signatures: false
