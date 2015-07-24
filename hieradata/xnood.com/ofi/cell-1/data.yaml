@@ -51,7 +51,7 @@ Booddies:
   IMAGE: 'h0tbird/data:latest'
   HOSTNAME: "data01.%{::domain}"
   DATA_DIR: '/data/data'
-  COREOS_CHANNEL: 'alpha'
+  COREOS_CHANNEL: 'beta'
   HOST_BRIDGE: 'core0'
  gito:
   ID: 'gito01'
