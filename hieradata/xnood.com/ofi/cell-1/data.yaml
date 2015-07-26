@@ -32,6 +32,7 @@ Booddies:
  boot:
   ID: 'boot01'
   IMAGE: 'h0tbird/boot:latest'
+  FORCE_PULL_IMAGE: 'false'
   HOSTNAME: "boot01.%{::domain}"
   DATA_DIR: '/data/boot'
   DHCP_RANGE: '172.16.8.16,172.16.8.95,12h'
@@ -42,31 +43,39 @@ Booddies:
   IP_PREFIX: '21'
   GATEWAY: '172.16.8.1'
   HOST_BRIDGE: 'core0'
+  IFACE: 'eth0'
  cgit:
   ID: 'cgit01'
   IMAGE: 'h0tbird/cgit:latest'
+  FORCE_PULL_IMAGE: 'false'
   HOSTNAME: "cgit01.%{::domain}"
  data:
   ID: 'data01'
   IMAGE: 'h0tbird/data:latest'
+  FORCE_PULL_IMAGE: 'false'
   HOSTNAME: "data01.%{::domain}"
   DATA_DIR: '/data/data'
   COREOS_CHANNEL: 'alpha'
   HOST_BRIDGE: 'core0'
+  IFACE: 'eth0'
  gito:
   ID: 'gito01'
   IMAGE: 'h0tbird/gito:latest'
+  FORCE_PULL_IMAGE: 'false'
   HOSTNAME: "gito01.%{::domain}"
   DATA_DIR: '/data/gito'
   SSH_PRI_KEY: '/root/.ssh/gitolite.key'
   SSH_PUB_KEY: '/root/.ssh/gitolite.key.pub'
   TRUST_HOSTS: 'github.com'
   HOST_BRIDGE: 'core0'
+  IFACE: 'eth0'
  regi:
   ID: 'regi01'
   IMAGE: 'h0tbird/regi:latest'
+  FORCE_PULL_IMAGE: 'false'
   HOSTNAME: "regi01.%{::domain}"
   DATA_DIR: '/data/regi'
   HOST_BRIDGE: 'core0'
+  IFACE: 'eth0'
 
 ...
