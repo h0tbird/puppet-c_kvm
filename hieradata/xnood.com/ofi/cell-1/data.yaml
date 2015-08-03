@@ -33,6 +33,7 @@ Flannel:
  subnetlen: '27'
  subnetmin: '172.16.8.96'
  subnetmax: '172.16.15.224'
+ backend: 'host-gw'
 
 #------------------------------------------------------------------------------
 # Booddies config:

@@ -30,6 +30,7 @@ Flannel:
  subnetlen: ''
  subnetmin: ''
  subnetmax: ''
+ backend: 'host-gw'
 
 #------------------------------------------------------------------------------
 # Booddies config:
