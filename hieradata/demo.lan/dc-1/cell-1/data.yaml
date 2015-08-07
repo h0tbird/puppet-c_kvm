@@ -16,10 +16,10 @@ MasterHosts:
 DnsmasqLeases:
  - name: 'kvm-1'
    mac: '4c:72:b9:26:25:97'
-   ip: '192.168.1.113'
+   ip: '192.168.1.33'
  - name: 'kvm-2'
    mac: '54:be:f7:88:25:c5'
-   ip: '192.168.1.144'
+   ip: '192.168.1.34'
 
 #------------------------------------------------------------------------------
 # Flannel config:
@@ -44,12 +44,12 @@ Booddies:
   FORCE_PULL_IMAGE: 'false'
   HOSTNAME: "boot01.%{::domain}"
   DATA_DIR: '/data/boot'
-  DHCP_RANGE: '192.168.1.50,192.168.1.150,12h'
+  DHCP_RANGE: '192.168.1.33,192.168.1.62,12h'
   DHCP_OPTION: 'option:router,192.168.1.1'
   DNS_UPSTREAMS: '8.8.8.8 8.8.4.4'
   DOMAIN: "%{::domain}"
   IP: '192.168.1.2'
-  IP_PREFIX: '24'
+  IP_PREFIX: '27'
   GATEWAY: '192.168.1.1'
   HOST_BRIDGE: 'core0'
   IFACE: 'eth0'
