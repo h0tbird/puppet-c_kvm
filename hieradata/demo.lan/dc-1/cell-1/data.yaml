@@ -44,12 +44,12 @@ Booddies:
   FORCE_PULL_IMAGE: 'false'
   HOSTNAME: "boot01.%{::domain}"
   DATA_DIR: '/data/boot'
-  DHCP_RANGE: '192.168.1.33,192.168.1.62,12h'
+  DHCP_RANGE: '192.168.1.11,192.168.1.62,12h'
   DHCP_OPTION: 'option:router,192.168.1.1'
   DNS_UPSTREAMS: '8.8.8.8 8.8.4.4'
   DOMAIN: "%{::domain}"
   IP: '192.168.1.2'
-  IP_PREFIX: '27'
+  IP_PREFIX: '26'
   GATEWAY: '192.168.1.1'
   HOST_BRIDGE: 'core0'
   IFACE: 'eth0'
