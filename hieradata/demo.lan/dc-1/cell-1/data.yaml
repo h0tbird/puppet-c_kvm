@@ -27,9 +27,9 @@ DnsmasqLeases:
 
 Flannel:
  network: '192.168.1.0/24'
- subnetlen: '27'
+ subnetlen: '28'
  subnetmin: '192.168.1.64'
- subnetmax: '192.168.1.224'
+ subnetmax: '192.168.1.240'
  backend:
   type: 'host-gw'
 
