@@ -31,7 +31,7 @@ DnsmasqLeases:
 Flannel:
  network: '172.16.8.0/21'
  subnetlen: '27'
- subnetmin: '172.16.8.96'
+ subnetmin: '172.16.8.128'
  subnetmax: '172.16.15.224'
  backend:
   type: 'host-gw'
@@ -47,12 +47,12 @@ Booddies:
   FORCE_PULL_IMAGE: 'false'
   HOSTNAME: "boot01.%{::domain}"
   DATA_DIR: '/data/boot'
-  DHCP_RANGE: '172.16.8.16,172.16.8.95,12h'
+  DHCP_RANGE: '172.16.8.51,172.16.8.126,infinite'
   DHCP_OPTION: 'option:router,172.16.8.1'
   DNS_UPSTREAMS: '8.8.8.8 8.8.4.4'
   DOMAIN: "%{::domain}"
   IP: '172.16.8.2'
-  IP_PREFIX: '21'
+  IP_PREFIX: '25'
   GATEWAY: '172.16.8.1'
   HOST_BRIDGE: 'core0'
   IFACE: 'eth0'
