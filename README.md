@@ -10,6 +10,6 @@ The files are exposed to `CoreOS` using a virtualization-aware file system pass-
 YAML is used as a `Hiera` backend to store the configuration data.
 
 ```
-[root@kvm-1 ~]# puppet facts find kvm-1.cell-0.dc-1.demo.lan | jq '.values.fqdn_3'
+puppet facts find kvm-1.cell-0.dc-1.demo.lan | jq '.values.fqdn_3'
 "cell-0"
 ```
