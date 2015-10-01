@@ -162,5 +162,8 @@ Booddies:
    - 'mesosphere/mesos-master:0.24.1-0.2.35.ubuntu1404'
    - 'mesosphere/mesos-slave:0.24.1-0.2.35.ubuntu1404'
    - 'mesosphere/marathon:v0.10.1'
+   - 'google/cadvisor:0.18.0'
+   - 'ceph/daemon:latest'
+   - 'h0tbird/confd:latest'
 
 ...
