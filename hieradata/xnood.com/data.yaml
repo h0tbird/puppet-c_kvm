@@ -32,16 +32,12 @@ SystemUsers:
      key: *SshKey_borja_garcia
     santiago.nunezcacho:
      key: *SshKey_santiago_nunezcacho
-    juancarlos.perez:
-     key: *SshKey_juancarlos_perez
     xavier.lario:
      key: *SshKey_xavier_lario
     roger.torrentsgeneros:
      key: *SshKey_roger_torrentsgeneros
     xavier.cespedes:
      key: *SshKey_xavier_cespedes
-    jorge.tarrero:
-     key: *SshKey_jorge_tarrero
  marc.villacorta:
   linux:
    uid: '1000'
