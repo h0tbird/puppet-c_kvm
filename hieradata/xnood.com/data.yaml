@@ -74,17 +74,6 @@ SystemUsers:
    keys:
     santiago.nunezcacho:
      key: *SshKey_santiago_nunezcacho
- juancarlos.perez:
-  linux:
-   uid: '1003'
-   gid: '1003'
-   comment: 'Juan Carlos Pérez'
-   pass: '!!'
-   home: '/home/juancarlos.perez'
-   shell: '/bin/bash'
-   keys:
-    juancarlos.perez:
-     key: *SshKey_juancarlos_perez
  xavier.lario:
   linux:
    uid: '1004'
@@ -118,17 +107,6 @@ SystemUsers:
    keys:
     xavier.cespedes:
      key: *SshKey_xavier_cespedes
- jorge.tarrero:
-  linux:
-   uid: '1007'
-   gid: '1007'
-   comment: 'Jorge Tarrero'
-   pass: '!!'
-   home: '/home/jorge.tarrero'
-   shell: '/bin/bash'
-   keys:
-    marc.villacorta:
-     key: *SshKey_jorge_tarrero
 
 #------------------------------------------------------------------------------
 # SSH profile parameters:
