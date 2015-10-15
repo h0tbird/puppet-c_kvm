@@ -16,20 +16,20 @@ MasterHosts:
 DnsmasqLeases:
  - name: 'kvm-1'
    mac: '4c:72:b9:26:25:97'
-   ip: '192.168.1.38'
+   ip: '192.168.2.38'
  - name: 'kvm-2'
    mac: '54:be:f7:88:25:c5'
-   ip: '192.168.1.32'
+   ip: '192.168.2.32'
 
 #------------------------------------------------------------------------------
 # Flannel config:
 #------------------------------------------------------------------------------
 
 Flannel:
- network: '192.168.1.0/24'
+ network: '192.168.2.0/24'
  subnetlen: '28'
- subnetmin: '192.168.1.64'
- subnetmax: '192.168.1.240'
+ subnetmin: '192.168.2.64'
+ subnetmax: '192.168.2.240'
  backend:
   type: 'host-gw'
 
@@ -44,13 +44,13 @@ Booddies:
   FORCE_PULL_IMAGE: 'false'
   HOSTNAME: "boot01.%{::domain}"
   DATA_DIR: '/var/lib/booddies/boot'
-  DHCP_RANGE: '192.168.1.11,192.168.1.62,infinite'
-  DHCP_OPTION: 'option:router,192.168.1.1'
+  DHCP_RANGE: '192.168.2.11,192.168.2.62,infinite'
+  DHCP_OPTION: 'option:router,192.168.2.1'
   DNS_UPSTREAMS: '8.8.8.8 8.8.4.4'
   DOMAIN: "%{::domain}"
-  IP: '192.168.1.2'
+  IP: '192.168.2.2'
   IP_PREFIX: '26'
-  GATEWAY: '192.168.1.1'
+  GATEWAY: '192.168.2.1'
   HOST_BRIDGE: 'core0'
   IFACE: 'eth0'
   LOG_FILE: '/var/log/booddies/boot.log'
