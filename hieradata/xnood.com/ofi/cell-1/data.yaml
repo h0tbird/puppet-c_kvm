@@ -165,6 +165,6 @@ Booddies:
    - 'google/cadvisor:0.18.0'
    - 'ceph/daemon:latest'
    - 'h0tbird/confd:latest'
-   - 'prom/prometheus:0.15.1'
+   - 'prom/prometheus:0.16.1'
 
 ...
