@@ -57,7 +57,7 @@ CephConfig:
   ms_bind_port_max: 7100
  client:
   rbd_cache_enabled: true
-  rbd_cache_writethrough_until_flush: true
+  rbd_cache_writethrough_until_flush: false
  mds:
   mds_cache_size: 100000
 
