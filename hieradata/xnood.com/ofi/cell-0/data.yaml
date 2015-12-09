@@ -179,6 +179,6 @@ Booddies:
    - 'ceph/daemon:latest'
    - 'h0tbird/confd:v0.11.0-1'
    - 'prom/prometheus:0.16.1'
-   - 'h0tbird/mesos-dns:v0.5.1-2'
+   - 'h0tbird/mesos-dns:v0.5.1-3'
 
 ...
