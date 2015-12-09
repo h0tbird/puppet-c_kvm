@@ -49,7 +49,7 @@ Booddies:
   DATA_DIR: '/var/lib/booddies/boot'
   DHCP_RANGE: '172.16.8.51,172.16.8.126,infinite'
   DHCP_OPTION: 'option:router,172.16.8.1'
-  DNS_UPSTREAMS: '8.8.8.8 8.8.4.4'
+  DNS_UPSTREAMS: '172.20.4.66 172.20.4.67'
   DOMAIN: "%{::domain}"
   IP: '172.16.8.2'
   IP_PREFIX: '25'
