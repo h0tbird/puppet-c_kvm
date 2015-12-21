@@ -1,0 +1,171 @@
+---
+
+#------------------------------------------------------------------------------
+# CoreOS master hosts:
+#------------------------------------------------------------------------------
+
+MasterHosts:
+ - 'core-1'
+ - 'core-5'
+ - 'core-9'
+
+#------------------------------------------------------------------------------
+# Static DHCP leases (masters only):
+#------------------------------------------------------------------------------
+
+DnsmasqLeases:
+ - name: 'kvm-1'
+   mac: 'c8:1f:66:ed:a5:d8'
+   ip: ''
+ - name: 'kvm-2'
+   mac: 'c8:1f:66:ed:a5:f0'
+   ip: ''
+ - name: 'kvm-3'
+   mac: 'c8:1f:66:ed:8e:2e'
+   ip: ''
+
+#------------------------------------------------------------------------------
+# Flannel config:
+#------------------------------------------------------------------------------
+
+Flannel:
+ network: '10.128.0.0/21'
+ subnetlen: '27'
+ subnetmin: '10.128.0.192'
+ subnetmax: '10.128.7.224'
+ backend:
+  type: 'host-gw'
+
+#------------------------------------------------------------------------------
+# Booddies config:
+#------------------------------------------------------------------------------
+
+Booddies:
+ boot:
+  ID: 'boot01'
+  IMAGE: 'h0tbird/boot:latest'
+  FORCE_PULL_IMAGE: 'false'
+  HOSTNAME: "boot01.%{::domain}"
+  DATA_DIR: '/var/lib/booddies/boot'
+  DHCP_RANGE: '10.128.0.51,10.128.0.126,infinite'
+  DHCP_OPTION: 'option:router,10.128.0.1'
+  DNS_UPSTREAMS: '192.168.240.201 192.168.240.202'
+  DOMAIN: "%{::domain}"
+  IP: '10.128.0.2'
+  IP_PREFIX: '25'
+  GATEWAY: '10.128.0.1'
+  HOST_BRIDGE: 'core0'
+  IFACE: 'eth0'
+  LOG_FILE: '/var/log/booddies/boot.log'
+  OUI: '00:16:3e'
+ cgit:
+  ID: 'cgit01'
+  IMAGE: 'h0tbird/cgit:latest'
+  FORCE_PULL_IMAGE: 'false'
+  HOSTNAME: "cgit01.%{::domain}"
+ data:
+  ID: 'data01'
+  IMAGE: 'h0tbird/data:latest'
+  FORCE_PULL_IMAGE: 'false'
+  HOSTNAME: "data01.%{::domain}"
+  DATA_DIR: '/var/lib/booddies/data'
+  COREOS_CHANNEL: 'alpha'
+  DOCKER_VOLUME_RBD_VERSION: 'v0.1.2'
+  HOST_BRIDGE: 'core0'
+  IFACE: 'eth0'
+  LOG_FILE: '/var/log/booddies/data.log'
+  OUI: '00:16:3e'
+ gito:
+  ID: 'gito01'
+  IMAGE: 'h0tbird/gito:latest'
+  FORCE_PULL_IMAGE: 'false'
+  HOSTNAME: "gito01.%{::domain}"
+  DATA_DIR: '/var/lib/booddies/gito'
+  SSH_PRI_KEY: '/root/.ssh/gitolite.key'
+  SSH_PUB_KEY: '/root/.ssh/gitolite.key.pub'
+  TRUST_HOSTS: 'github.com'
+  HOST_BRIDGE: 'core0'
+  IFACE: 'eth0'
+  LOG_FILE: '/var/log/booddies/gito.log'
+  OUI: '00:16:3e'
+  REPOS:
+    - URL: 'https://github.com/h0tbird/config-puppet.git'
+      DESCRIPTION: 'Puppet config repository'
+      CATEGORY: 'Configurations'
+      MIRROR: 'true'
+    - URL: 'https://github.com/h0tbird/config-fleet.git'
+      DESCRIPTION: 'Fleet unit files repository'
+      CATEGORY: 'Configurations'
+      MIRROR: 'true'
+    - URL: 'https://github.com/h0tbird/config-kickstart.git'
+      DESCRIPTION: 'Kickstart files repository'
+      CATEGORY: 'Configurations'
+      MIRROR: 'true'
+    - URL: 'https://github.com/h0tbird/config-pxelinux.git'
+      DESCRIPTION: 'PXELinux files repository'
+      CATEGORY: 'Configurations'
+      MIRROR: 'true'
+    - URL: 'https://github.com/h0tbird/r10k-kvm.git'
+      DESCRIPTION: 'KVM control repository'
+      CATEGORY: 'R10K'
+      MIRROR: 'true'
+    - URL: 'https://github.com/h0tbird/puppet-r_kvm.git'
+      DESCRIPTION: 'Puppet KVM role repository'
+      CATEGORY: 'Puppet roles'
+      MIRROR: 'true'
+    - URL: 'https://github.com/h0tbird/puppet-r_base.git'
+      DESCRIPTION: 'Puppet base role repository'
+      CATEGORY: 'Puppet roles'
+      MIRROR: 'true'
+    - URL: 'https://github.com/h0tbird/puppet-p_ssh.git'
+      DESCRIPTION: 'Puppet ssh profile repository'
+      CATEGORY: 'Puppet profiles'
+      MIRROR: 'true'
+    - URL: 'https://github.com/h0tbird/puppet-m_misclib.git'
+      DESCRIPTION: 'Puppet misclib module repository'
+      CATEGORY: 'Puppet modules'
+      MIRROR: 'true'
+    - URL: 'https://github.com/h0tbird/puppet-m_users.git'
+      DESCRIPTION: 'Puppet users module repository'
+      CATEGORY: 'Puppet modules'
+      MIRROR: 'true'
+    - URL: 'https://github.com/h0tbird/puppet-m_ssh.git'
+      DESCRIPTION: 'Puppet ssh module repository'
+      CATEGORY: 'Puppet modules'
+      MIRROR: 'true'
+    - URL: 'https://github.com/h0tbird/puppet-m_terminfo.git'
+      DESCRIPTION: 'Puppet terminfo module repository'
+      CATEGORY: 'Puppet modules'
+      MIRROR: 'true'
+    - URL: 'https://github.com/puppetlabs/puppetlabs-stdlib.git'
+      DESCRIPTION: 'Puppet stdlib module repository'
+      CATEGORY: 'Puppet modules'
+      MIRROR: 'false'
+      NAME: 'puppet-m_stdlib'
+    - URL: 'https://github.com/puppetlabs/puppetlabs-vcsrepo.git'
+      DESCRIPTION: 'Puppet vcsrepo module repository'
+      CATEGORY: 'Puppet modules'
+      MIRROR: 'false'
+      NAME: 'puppet-m_vcsrepo'
+ regi:
+  ID: 'regi01'
+  IMAGE: 'h0tbird/regi:latest'
+  FORCE_PULL_IMAGE: 'false'
+  HOSTNAME: "regi01.%{::domain}"
+  DATA_DIR: '/var/lib/booddies/regi'
+  HOST_BRIDGE: 'core0'
+  IFACE: 'eth0'
+  LOG_FILE: '/var/log/booddies/regi.log'
+  OUI: '00:16:3e'
+  IMAGES:
+   - 'h0tbird/zookeeper:latest'
+   - 'mesosphere/mesos-master:0.26.0-0.2.145.ubuntu1404'
+   - 'mesosphere/mesos-slave:0.26.0-0.2.145.ubuntu1404'
+   - 'mesosphere/marathon:v0.13.0'
+   - 'google/cadvisor:0.19.3'
+   - 'ceph/daemon:infernalis'
+   - 'h0tbird/confd:v0.11.0-1'
+   - 'prom/prometheus:0.16.1'
+   - 'h0tbird/mesos-dns:v0.5.1-3'
+
+...
