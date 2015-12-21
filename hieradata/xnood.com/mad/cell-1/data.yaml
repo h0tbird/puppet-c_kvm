@@ -16,13 +16,13 @@ MasterHosts:
 DnsmasqLeases:
  - name: 'kvm-1'
    mac: 'c8:1f:66:ed:a5:d8'
-   ip: ''
+   ip: '10.128.0.90'
  - name: 'kvm-2'
    mac: 'c8:1f:66:ed:a5:f0'
-   ip: ''
+   ip: '10.128.0.91'
  - name: 'kvm-3'
    mac: 'c8:1f:66:ed:8e:2e'
-   ip: ''
+   ip: '10.128.0.92'
 
 #------------------------------------------------------------------------------
 # Flannel config:
