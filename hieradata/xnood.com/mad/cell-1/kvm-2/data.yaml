@@ -10,10 +10,4 @@ CephDataDrives:
  3: '/dev/sdc'
  4: '/dev/sdd'
 
-HDFSDataDrives:
- 1: 'none'
- 2: 'none'
- 3: 'none'
- 4: 'none'
-
 ...
