@@ -160,7 +160,7 @@ Booddies:
    - 'mesosphere/mesos-slave:0.26.0-0.2.145.ubuntu1404'
    - 'mesosphere/marathon:v0.13.0'
    - 'google/cadvisor:0.19.3'
-   - 'ceph/daemon:infernalis'
+   - 'h0tbird/ceph:v9.2.0-2'
    - 'h0tbird/confd:v0.11.0-1'
    - 'prom/prometheus:0.16.1'
    - 'h0tbird/mesos-dns:v0.5.1-3'
