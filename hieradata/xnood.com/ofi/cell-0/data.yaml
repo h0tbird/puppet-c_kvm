@@ -160,7 +160,7 @@ Booddies:
       CATEGORY: 'Puppet modules'
       MIRROR: 'false'
       NAME: 'puppet-m_vcsrepo'
-    - URL: 'https://github.com/thias/puppet-sysctl'
+    - URL: 'https://github.com/thias/puppet-sysctl.git'
       DESCRIPTION: 'Puppet module to manage sysctl parameters'
       CATEGORY: 'Puppet modules'
       MIRROR: 'false'
