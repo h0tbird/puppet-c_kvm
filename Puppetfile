@@ -26,3 +26,6 @@ mod 'p_ssh',
 
 mod 'terminfo',
   :git => 'http://gito01/cgit/puppet-m_terminfo'
+
+mod 'sysctl',
+  :git => 'http://gito01/cgit/puppet-m_sysctl'
