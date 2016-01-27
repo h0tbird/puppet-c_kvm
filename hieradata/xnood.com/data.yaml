@@ -13,6 +13,44 @@ SshKeys:
  xavier.cespedes: &SshKey_xavier_cespedes 'AAAAB3NzaC1yc2EAAAABJQAAAQEA07/5aU6Ivq9lpiNRk549XzXQrV5cai7Y1sim3Ou1uf/F4eY//YDDPOr3WhpLo+BqhFz4sQfVb1c4bD6caZFy9PYEuE2jLPTdoxRTG56afc3oGguspk6uj9t5IyaxAI/5UDiYi+0O0NBKpx42HjeP/oeUQdKij5Z/JMc9tXvw8bGPpENVuqCUZ6iqW7ftKuuR4fTHLgtCQSlNRJZDB06gHd2DoDB8s2ZDVmeTTYpYx2QXIk6Dr/OyTeULAGmCYdryD9DF1rnmx3Q4YQQ2JzDPB7/ED/FtgJRoeP+IoP0Jr0ALoZtW7V+7rk+H4koCjsYmBNLZCdr9TnqvEPrsjwPuYw=='
 
 #------------------------------------------------------------------------------
+# Docker registry CA (public):
+#------------------------------------------------------------------------------
+
+DockerRegistryCA: |
+	-----BEGIN CERTIFICATE-----
+	MIIFbzCCA1egAwIBAgIJAOg0x8gKE9m4MA0GCSqGSIb3DQEBCwUAME4xJzAlBgNV
+	BAMMHmludGVybmFsLXJlZ2lzdHJ5LXN5cy5tYXJhdGhvbjEWMBQGA1UECgwNTWVz
+	b3MgY2x1c3RlcjELMAkGA1UEBhMCRVMwHhcNMTYwMTI2MTQ1ODU2WhcNMTcwMTI1
+	MTQ1ODU2WjBOMScwJQYDVQQDDB5pbnRlcm5hbC1yZWdpc3RyeS1zeXMubWFyYXRo
+	b24xFjAUBgNVBAoMDU1lc29zIGNsdXN0ZXIxCzAJBgNVBAYTAkVTMIICIjANBgkq
+	hkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA8Xxk35DNy2Ly2PfX/V8AcranzkfX79Zw
+	DLepODvqS79UeFUyH97wwjAsT2wRemxAd2I840JCU4NJsOHHM+b73orNqY90D3a2
+	4g4gw/3rm7B2aBH/crLHKBvjsoAW01KAi62d1KCBLZ5ZnfIF3CX0A6GF5cNBZmsE
+	glPdQzKaBfWoBLNSPh4wUa9ATdiRj3vUMLI00NuUU+0AJQl3I2/PqOe7Ntbr9wW2
+	eMR5I+aQPbMAV0C6Z5mnzAunUsrdqaaMZs10gqIQ3DL9N6lqg7A8y/QmfAIo6dKj
+	iNoEDQIzx0QIxnridsifxQqhyLMNpCVKemm2nZCz1JOPFUvehPr6A3o32DCSd5YD
+	CMz8sRF/cRigyYb99bQDm+1lxGuWfr4FWpnp+cpCloVcLowp3NQBPXY8ukcgg+z4
+	KrqoRz6Q89CupMt62mqy4zoBS7CD4sVz3T3F+deh7qfU4XfSE5gKuKdUCdh35Yu1
+	19nWt3VvuOWNveygbTEkSgodFkUoxfCvLpiMIii1Znh+xrPaKA49E9lmJBjo46mk
+	ma73V49vs67sF0nCprGcahny0v1MaF60vOc/HOIO1Erk0anbeVBkYw1nLHVUZw0I
+	WYbtB7aY+Am6y7D7k+aEslq6VUya4XbMjHAxvmbpzag7xlie76OnP9LfupmtVwmK
+	u+5bnVFN2mUCAwEAAaNQME4wHQYDVR0OBBYEFD3YQJGFqUz2QmEpGhueCgcF+YLh
+	MB8GA1UdIwQYMBaAFD3YQJGFqUz2QmEpGhueCgcF+YLhMAwGA1UdEwQFMAMBAf8w
+	DQYJKoZIhvcNAQELBQADggIBALWMEGB2gdpksu6ngwFrfW+iMyucfTtbhDslbwLe
+	vZ4WbA0oWPL8FG7EMf/QDk8chXx2wxw1qj3eLV5nL8tP1ae676tfaQDKqwFDqlEV
+	VDZri6iXwgDFVqtrMJZDQw/abm+RjkVo/o7jeGohABPPT39ahVcmCXH5ZROkxOFj
+	6VX61TdskDfrdglWm238uIr6lQubjykWvEFFB4+C1mz8EoWOvYcCvuBwc+WepT+V
+	7CS86KLJ0S/clwFeRyWpseJwvaCurJSsqds3IZ23XqWZkiToSEBCm+SwlNZ1qMcF
+	ry5DyCdAKVu02RF6H/WaHqHM7Xw8rfQNkih93htE+u9lMY+mv7hLOIdAgwxNUmzv
+	+aIlxt639REp0itnQCcZlBuDMr+FpaOI8/rtlI710eU51QvkSjWbLptTXeaYBrxv
+	XGARVnc4F2oUsZIHI3NwBgDjaMWXBQmUb/FWwMtIWKP6NMiaSXQx6CwxcfUceHbY
+	AwRgZFSKvYoCBTvFFCR66DsIQ3KHvEZNWLtDkk7us9cW3n9ytnBFwwTRC51LLj17
+	g2K3J0jDqstqH6aEML/SJz+I3DAGVAH66BicZZlGaBbPIZa14nooMhNtUUgK/Zro
+	GHKuvDnOfdAX/5Jyauf2BSwnMGczMW+8oJbUDVMy1zjzJj9FKmxNtcot6LqEs0Sm
+	VFld
+	-----END CERTIFICATE-----
+
+#------------------------------------------------------------------------------
 # Linux system users:
 #------------------------------------------------------------------------------
 
