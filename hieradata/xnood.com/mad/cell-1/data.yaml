@@ -189,7 +189,7 @@ Booddies:
    - 'google/cadvisor:v0.21.0'
    - 'h0tbird/ceph:v9.2.0-2'
    - 'h0tbird/confd:v0.11.0-1'
-   - 'prom/prometheus:0.16.1'
+   - 'prom/prometheus:0.16.2'
    - 'h0tbird/mesos-dns:v0.5.1-4'
 
 ...
