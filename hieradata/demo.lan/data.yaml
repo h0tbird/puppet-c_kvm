@@ -8,6 +8,46 @@ SshKeys:
  marc.villacorta: &SshKey_marc_villacorta 'AAAAB3NzaC1yc2EAAAABIwAAAQEAtWGpShgH4SCTM3WwsSwMScIGz/Fzvx5xp73fnj7rKGZNdkFNzKObbTgrN77UkWGw9aVazqjTErmPxzcNfW+dXYdxO0s/lUYi1jK6o1JkMv5j07LiOTqsnqJBxJLfECmcjQw6u9ECFErC+Z9TeaMUWVBRKDNWamkT0CyIN7Bg0qQ3spyeX7qNLj5dsP5w+2LE9qiUY0ouDK8CSH1Fr4t3emJqjx8lVMCDXDqBigq0GalglK/o9yW+bp9JrT1EDSH2RwBoiMrTnphHftRHwWUnr2bWLlifd4HiFrASya922asEjdq4MOwu3KGuKHPflqQ7JeGka3s3ymZA7GWUu1KvZw=='
 
 #------------------------------------------------------------------------------
+# Docker registry CA (public):
+#------------------------------------------------------------------------------
+
+DockerRegistryCA: |
+ -----BEGIN CERTIFICATE-----
+     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
+     M0s=
+     -----END CERTIFICATE-----
+
+#------------------------------------------------------------------------------
 # Linux system users:
 #------------------------------------------------------------------------------
 
