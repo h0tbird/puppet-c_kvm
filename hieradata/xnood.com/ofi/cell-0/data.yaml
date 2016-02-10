@@ -179,7 +179,7 @@ Booddies:
    - 'h0tbird/zookeeper:latest'
    - 'mesosphere/mesos-master:0.26.0-0.2.145.ubuntu1404'
    - 'mesosphere/mesos-slave:0.26.0-0.2.145.ubuntu1404'
-   - 'mesosphere/marathon:v0.15.1-RC1'
+   - 'mesosphere/marathon:v0.15.1'
    - 'google/cadvisor:v0.21.0'
    - 'h0tbird/ceph:v9.2.0-2'
    - 'h0tbird/confd:v0.11.0-1'
