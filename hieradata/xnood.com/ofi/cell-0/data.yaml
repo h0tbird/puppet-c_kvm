@@ -176,9 +176,9 @@ Booddies:
   LOG_FILE: '/var/log/booddies/regi.log'
   OUI: '00:16:3e'
   IMAGES:
-   - 'h0tbird/zookeeper:latest'
-   - 'mesosphere/mesos-master:0.26.0-0.2.145.ubuntu1404'
-   - 'mesosphere/mesos-slave:0.26.0-0.2.145.ubuntu1404'
+   - 'h0tbird/zookeeper:v3.4.8-1'
+   - 'mesosphere/mesos-master:0.27.1-2.0.226.ubuntu1404'
+   - 'mesosphere/mesos-slave:0.27.1-2.0.226.ubuntu1404'
    - 'mesosphere/marathon:v0.15.3'
    - 'google/cadvisor:v0.21.0'
    - 'h0tbird/ceph:v9.2.0-2'
