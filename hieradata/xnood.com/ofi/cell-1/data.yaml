@@ -25,6 +25,45 @@ DnsmasqLeases:
    ip: '172.16.8.92'
 
 #------------------------------------------------------------------------------
+# Docker registry CA (public):
+#------------------------------------------------------------------------------
+
+DockerRegistryCA: |
+ -----BEGIN CERTIFICATE-----
+     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
+     -----END CERTIFICATE-----
+
+#------------------------------------------------------------------------------
 # Flannel config:
 #------------------------------------------------------------------------------
 
